@@ -5,7 +5,9 @@
     "vector": "cpp",
     "iostream": "cpp",
     "xstring": "cpp",
-    "ios": "cpp"
+    "ios": "cpp",
+    "queue": "cpp",
+    "stack": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }
