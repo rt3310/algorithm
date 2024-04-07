@@ -12,15 +12,16 @@ int main() {
         return 0;
     }
 
-    stack<vector<int, int>> s;
+    stack<vector<int>> s;
     for (int i = 0; i < n; i++) {
         long long h;
         cin >> h;
 
         int w = 1;
+        int prevH = 1;
         while (!s.empty()) {
-
+            
         }
-        s.push({h, w});
+        s.push(vector<int> {h, min(h, prevH), });
     }
 }
