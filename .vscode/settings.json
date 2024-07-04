@@ -8,7 +8,8 @@
     "ios": "cpp",
     "queue": "cpp",
     "stack": "cpp",
-    "utility": "cpp"
+    "utility": "cpp",
+    "deque": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }

@@ -2,10 +2,10 @@
 using namespace std;
 
 int main() {
-    char a = '3';
-    char b = 'a';
+    int a = 3;
 
-    cout << isdigit(a) << ' ' << isdigit(b) << "\n";
-    cout << a - '0';
+    while (a--) {
+        cout << a << "\n";
+    }
     return 0;
 }
