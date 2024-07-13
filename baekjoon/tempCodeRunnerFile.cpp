@@ -1,6 +1,6 @@
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
-            cout << map[i][j] << " ";
+    for (int i = 0; i < h; i++) {
+        for (int j = 0; j < w; j++) {
+            cout << visited[i][j][1] << " ";
         }
         cout << "\n";
     }
