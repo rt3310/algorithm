@@ -9,7 +9,8 @@
     "queue": "cpp",
     "stack": "cpp",
     "utility": "cpp",
-    "deque": "cpp"
+    "deque": "cpp",
+    "string": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }
