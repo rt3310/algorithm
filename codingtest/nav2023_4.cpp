@@ -3,7 +3,9 @@
 using namespace std;
 
 vector<int> solution(int n, vector<vector<int>> chocolate) {
+    int length = chocolate.size();
 
+    
 }
 
 int main() {
