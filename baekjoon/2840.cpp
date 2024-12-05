@@ -3,7 +3,7 @@
 using namespace std;
 
 int n, k;
-char wheel[100];
+char wheel[25];
 unordered_set<char> check;
 
 int main() {
