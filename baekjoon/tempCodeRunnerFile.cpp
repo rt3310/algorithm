@@ -1,7 +1,13 @@
-    // for (int i = 0; i < 4; i++) {
-    //     for (int j = 0; j < 3; j++) {
-    //         cout << dice[i][j] << ' ';
-    //     }
-    //     cout << endl;
-    // }
-    // cout << endl;
+
+void swap(int& a, int& b) {
+    int temp = a;
+    a = b;
+    b = temp;
+}
+
+int main() {
+    int a = 1;
+    int b = 2;
+
+    return 0;
+}

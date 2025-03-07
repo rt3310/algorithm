@@ -63,6 +63,7 @@ int main() {
 
             dq.push_back({r, c});
             visited[r][c] = true;
+
         }
     }
 

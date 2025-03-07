@@ -1,7 +1,6 @@
 #include <iostream>
 #include <deque>
 #include <vector>
-#include <unordered_map>
 using namespace std;
 
 int n, m;
@@ -11,11 +10,11 @@ int visited[50][50];
 int order = 0;
 int maxRoomSize = 0;
 vector<int> roomSizes;
-bool adjacent[50][50];
 
 int dir[4][2] = {{0, -1}, {-1, 0}, {0, 1}, {1, 0}};
 
 int search(pair<int, int> start) {
+    dq.clear();
     dq.push_back(start);
     visited[start.first][start.second] = order;
 
@@ -32,7 +31,6 @@ int search(pair<int, int> start) {
             }
 
             if (map[cur.first][cur.second] & (1 << i)) {
-                adjacent[order][visited[r][c]] = true;
                 continue;
             }
 
@@ -74,10 +72,14 @@ int main() {
     }
 
     int maxSum = 0;
-    for (int i = 1; i <= order; i++) {
-        for (int j = i + 1; j <= order; j++) {
-            if (adjacent[i][j] || adjacent[j][i]) {
-                maxSum = max(maxSum, roomSizes[i - 1] + roomSizes[j - 1]);
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < n; j++) {
+            if (j < n - 1 && visited[i][j] != visited[i][j + 1]) {
+                maxSum = max(maxSum, roomSizes[visited[i][j] - 1] + roomSizes[visited[i][j + 1] - 1]);
+            }
+
+            if (i < m - 1 && visited[i][j] != visited[i + 1][j]) {
+                maxSum = max(maxSum, roomSizes[visited[i][j] - 1] + roomSizes[visited[i + 1][j] - 1]);
             }
         }
     }
