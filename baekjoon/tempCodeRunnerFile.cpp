@@ -1,13 +1,6 @@
-
-void swap(int& a, int& b) {
-    int temp = a;
-    a = b;
-    b = temp;
-}
-
-int main() {
-    int a = 1;
-    int b = 2;
-
-    return 0;
-}
+    for (int i = 1; i <= k; i++) {
+        if (state[r][c][0] & (1 << i)) {
+            unit[i][0] = nr;
+            unit[i][1] = nc;
+        }
+    }
